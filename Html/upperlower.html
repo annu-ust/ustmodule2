@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+    <!--<script type="text/JavaScript">
+    //var s ="Hello World Welcome to programming";
+
+s=getElementById("string");
+
+//checkUpperLowerCaseString(s);
+function checkUpperLowerCaseString(str) {
+var len =  str.length;
+lowercount=0;
+uppercount=0;
+for ( var i =0; i < len; i++) {
+
+ // console.log(str[i])  ;
+    if(checkupper(str[i]))    
+      {uppercount++;}
+    else {lowercount++;}
+
+}
+document.write("uppercount:", uppercount);
+document.write("lowecount:", lowercount);
+}
+var c=prompt("enter a string");
+function checkupper(c) {
+
+    if( c >='A'  && c<='Z')  return true;}
+ 
+
+
+
+</script>
+--></head>
+    <body>
+        
+        <script>
+          var word=document.getElementById("string").value;
+            function countcase(word){
+                //word = $(word);
+                var upper=0;
+                var lower=0;
+                word1=word;
+            
+                for(var i=0;i<word.length;i++){
+                    if(word1[i].toUpperCase()==word[i]) {
+                        upper=upper+1;
+                    }
+                    else{
+                        lower=lower+1;
+                    }
+            
+                }
+            
+                document.write(upper+"<br/>");
+                document.write(lower);
+            }
+                //countcase("HellOworldD");
+            </script>
+            Enter the String: <input type="text" id="string">
+            <input type="button" onclick="countcase()" value="show">
+        </body>
+</html>

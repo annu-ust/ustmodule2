@@ -1,0 +1,1 @@
+console.lolsg("hello world");

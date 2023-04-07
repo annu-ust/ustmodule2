@@ -1,0 +1,76 @@
+<!--<p>binding works!</p>-->
+<hr>
+<!--one way binding-->
+   <h2>Available Products(s)</h2>
+   <h3>Product Id:&nbsp;{{productId}}</h3>
+   <h3>Description:&nbsp;{{description}}</h3>
+   <h3>Quantity:&nbsp;{{qty}}</h3>
+   <h3>Price:&nbsp;{{price}}</h3>
+   <!--property binding shown by[]-->
+   <h3>Available:&nbsp;&nbsp;<span [style.background-color]="available">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3>
+    <h3>Delivery:&nbsp;&nbsp;<span [style.background-color]="delivery">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3>
+        <!--two way binding showm by[()]-->
+        <h3>Enter order quantity:&nbsp;&nbsp;<input type="text" [(ngModel)]="orderedQty"></h3>
+        <h3>You have entered :{{orderedQty}} : units</h3>
+        <!--event binding shown by ()-->
+        <h3>Place Order &nbsp;<button type="button" (click)="takeOrder()">Place Order</button></h3>
+<hr>
+<div *ngIf="isMember;else nonMember">
+    <h3>Members Area</h3>
+    <h3>you are eligible for a 500Gb space</h3>
+     
+</div>
+<ng-template #nonMember>
+    <h4>Hurry! Register to avail great offers and details</h4>
+</ng-template>
+<hr>
+<div *ngIf="isQtyAvailable; else notAvailable"><h3>Available:&nbsp;&nbsp;<span [style.background-color]="available">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h3></div>
+<ng-template #notAvailable><span [style.background-color]="delivery">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></ng-template>
+<hr>
+<div>
+    <table border="2">
+        <thead><h3>product list</h3></thead>
+       <tr>
+         <th>Product id</th>
+        <th>Product name</th>
+        <th>Description</th>
+        <th>price</th>
+        <th>Quantity</th></tr>
+    <tr *ngFor="let product of products">
+      <td>{{product.id}}</td>
+       <td>{{product.name}}</td> 
+       <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+       <td>{{product.quantity}}</td> </tr>
+     
+</table>
+</div>
+<hr>
+<div>
+    <h2>Mobile Phones</h2>
+    <table  border="2">
+      <thead>
+        <th>Item Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Value</th>
+      </thead>
+      <tr *ngFor="let item of items">
+        <td>{{item.itemCode}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.qty}}</td>
+        <td>{{item.price*item.qty}}</td>
+        
+
+      </tr>
+    </table>
+</div>
+<hr>

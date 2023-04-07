@@ -1,0 +1,24 @@
+table
+{
+    border: 2px solid black;
+    padding: 2px;
+    background-color: bisque);
+}
+
+td{
+    font-size:medium;
+    font-weight: 200;
+    font-weight: bold;
+    color:black;
+}
+
+th{
+    color: black;
+}
+input{
+    color: gray;
+    
+}
+.myalign{
+    text-align:right;
+}

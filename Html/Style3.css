@@ -1,0 +1,83 @@
+.myDiv {
+    border: 2px outset black;
+    background-color: blanchedalmond;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    padding: 7px;
+   ;
+    
+  }
+  .myDiv2{
+    
+    width: 98.5%;
+    text-align: center;
+    padding: 7px;
+    background-color: lightblue;
+    
+  }
+  
+  
+  .myDiv3{
+    
+    width: 98.5%;
+    height: fit-content;
+    text-align: center;
+    padding: 7px;
+    background-color: lightblue;
+  }
+ 
+  .myDiv4{
+    
+    width: 98.5%;
+    text-align: center;
+    padding: 7px;
+    background-color: lightblue;
+  }
+ 
+  img {
+    float: left;
+   
+  }
+  .mytable{
+    border: 1px solid rgb(154, 14, 14);
+   
+    width: 98.5%;
+    text-align: center;
+    padding: 7px;
+   font-size: larger;
+   color: brown;
+   font-weight: 700;
+   
+ }
+ a:link {
+    color:black;
+  }
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: yellow;
+  }
+  /*.centerleft{
+    float: left;
+    width: 48%;
+    height: 35%;
+    padding: 7px;
+    border: 2px solid black;
+   
+     }
+     
+     .centerright{
+       float: right;
+       width: 48%;
+       height: 35%;
+       padding: 7px;
+       border: 2px solid grey;
+     }*/
+  

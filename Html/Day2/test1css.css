@@ -1,0 +1,49 @@
+*{
+/* font-family: 'PT Serif', serif;
+font-family: 'Quicksand', sans-serif; */
+padding: 0;
+margin: 0;
+}
+body{
+    border-top: black;
+    border-style: solid;
+    border-color:black;
+    border-width: 10px;
+    background-color: aliceblue;
+}
+
+div{
+    width: 1100px;
+    height: 150px;
+    border: 10px;
+    border-color: rgb(71, 64, 55);
+    border-style: solid;
+    padding: 25px;
+    margin: 10px;
+}
+/* .first-para{ */
+    /* background-color: aqua; */ /* coloring ist para only*/
+/* } */
+/* #p-2{background-color: aqua;} */
+.p1{background-color: aliceblue;}
+ h2,h3,h4{
+    font-family: 'Fasthand', 'cursive';
+    
+
+}
+ 
+/* #first >h1{}-to get a perticular element(direct child) */
+p{
+    font-family: 'PT Serif', serif;
+font-family: 'Quicksand', sans-serif;
+}
+
+span{
+    color: red;/*  for whole span tags*/
+}
+#p-2 > span{/* calling direct child */
+    color: aqua;
+}
+#third span{
+    color:yellowgreen;/* span inside third div only*/
+}

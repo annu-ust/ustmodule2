@@ -1,0 +1,448 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family:'PT Serif', serif ;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+a:link {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+    a:visited {
+        color:whitesmoke;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color:salmon;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:active {
+        color:slategray;
+        background-color: transparent;
+        text-decoration: underline;}
+      
+.container{
+    min-height: 100vh;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+   
+}
+#header{
+    position: fixed;
+    z-index:1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+#header .header{
+    min-height: 5vh;
+    background-color: rgba(31, 30,30, 0.24);
+}
+.header.nav-bar{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width:100% ;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+    position: fixed;
+}
+#label{
+    align-items: right;
+    margin-left: 1200px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: 100;
+
+}
+#image {
+    border-radius: 50px;
+    display: block;
+    margin-top: 0;
+    margin-left: 150px;
+    width: 2%;
+    position:fixed;
+    display: flex;
+  }
+
+
+#front{
+    background:url(pic1.jfif);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .9;
+   z-index: -1;
+}
+#front.front{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content:flex-start;
+
+}
+
+#front h1{ 
+    display: block;
+    width: fit-content;
+    font-size: 3rem;
+    position: relative;
+    color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#front h1:nth-child(1){
+    animation-delay: 2s;
+}
+#front h1:nth-child(2){
+    animation-delay: 3s;
+}
+#front h1:nth-child(3){
+    animation: text_reveal_name .5 ease forwards;
+    animation-delay: 4s;
+}
+#front h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: o;
+    background-color:crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+#front h1:nth-child(1) span{
+    animation-delay: 2s;
+}
+#front h1:nth-child(2) span{
+    animation-delay: 3s;
+}
+#front h1:nth-child(3) span{
+    animation-delay: 4s;
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color:red;
+        font-weight: 1000px;
+    }
+}
+
+/*about section*/
+.about{
+    padding: 100px 0;
+    font-family: 'Acme', sans-serif;
+    background: transparent;
+    background-color:#C5C6D0;
+}
+.about .title h1{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size:50px ;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-bottom:10px;
+    position: relative;
+}
+.about .title h1::before{
+    content: "";
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translatex(-50%);
+}
+.about .title h1::after{
+    content: " who am i";
+    position:absolute;
+    bottom:-10px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 2px;
+    background:#C5C6D0;
+    transform: translatex(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .col-left{
+    width: 45%;
+}
+.about .col-left img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-left: 80px;
+}
+.about .col-right{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.about .col-right p{
+    text-align: justify;
+}
+.about .col-right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .col-right a:hover{
+    color: crimson;
+    background: none;
+}
+/*skill section*/
+.skill{
+    padding: 100px 0;
+    font-family: 'Acme', sans-serif;
+    background: transparent;
+    background-color:lightgray;
+    background-position: o 1000px;
+}
+.skill .title h1{
+    font-family: 'Acme', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size:50px ;
+    font-weight: 700;
+    padding-bottom:10px;
+    position: relative;
+}
+.skill .title h1::before{
+    content: "";
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translatex(-50%);
+}
+.skill .title h1::after{
+    content: " what i know";
+    position:absolute;
+    bottom:-10px;
+    left: 50%;
+    font-size: 17px;
+    color: crimson;
+    padding: 0.1px;
+    background: lightgray;
+    transform: translatex(-50%);
+}
+.skill .skill-content .text{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: oblique;
+    font-family:'Acme', sans-serif ;
+    margin-left: 170px;
+    position: absolute;
+    margin: 120px;
+    
+}
+.skill .skill-content li{
+  margin: 20px 100px ;
+  margin-left: 500px;
+}
+.skill .skill-content .bar{
+    background:lightgrey;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px lightblue ;
+    position: relative;
+}
+.skill .skill-content .bar span{
+    height: 2px;
+    float: left;
+    background: darkslategray;
+}
+.skill .skill-content .html{
+    width: 90% ;
+}
+.skill .skill-content .css{
+    width: 80% ;
+}
+.skill .skill-content .js{
+    width: 70% ;
+}
+.skill .skill-content .c{
+    width: 60% ;
+}
+.skill .skill-content .python{
+    width: 60% ;
+}
+.skill .skill-content .java{
+    width: 80% ;
+}
+.skill .skill-content .mysql{
+    width: 70% ;
+}
+/*contact section*/
+.contact{
+   position: relative;
+   min-height: 100vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   box-sizing: border-box;
+   background: #DBD7D2;
+
+}
+.contact .contact-section{
+    max-width: 800px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+}
+.contact .contact-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  10px;
+}
+.contact .contact-content .contactinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-content .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact .contact-content .contactinfo .icon{
+    min-width: 60px;
+    height: 60px;
+    background:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact .contact-content .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: black;
+    flex-direction: column;
+    font-weight: 500;
+}
+.contact .contact-content .contactinfo .box .text  h2{
+    font-weight: 900;
+    color: darkslategrey;
+}
+.contact .contactform{
+    width: 40%;
+    padding: 40px;
+    background: dimgrey;
+}
+.contact .contactform h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+.contact .contactform .Inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact .contactform .Inputbox input,
+.contact .contactform .Inputbox .textarea{
+    width: 100%;
+    padding: 1px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    resize: none;
+   
+}
+.contact .contactform .Inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 10px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contact .contactform .Inputbox  .btn{
+    width: 100px;
+    background: turquoise;
+    color: ghostwhite;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10%;
+}
+.contact .contactform .Inputbox  .btn:hover{
+    background:  #183030;
+}

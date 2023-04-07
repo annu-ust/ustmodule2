@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arraydemo</title>
+    <script>
+        let data=new Array();
+        let info=["star wars",10,"$10",function math(){console.log('hello');},10,10==10];<!--in js we can add method inside a js array-->
+        console.log(info[3]);
+        info.push("mango");
+        console.log(info);
+         info.pop();
+         console.log(info);
+         info.unshift("javascript");
+         console.log(info);//insert element at index0
+         let len=info.unshift("javascript");
+         console.log("size of info="+len);
+         console.log(info);
+         info.shift()//remove element at the begining
+         console.log(info);
+         console.log(info.length);//length
+         let infoCopy=info;
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

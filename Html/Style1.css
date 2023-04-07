@@ -1,0 +1,15 @@
+table {
+    margin-left: 10cm;
+    border: 1px solid black;
+    text-align: center;
+    background-color: antiquewhite;
+ 
+}
+th{
+    color: cornflowerblue;
+}
+td{
+    text-align: center;
+    color: blueviolet;
+    padding-left: 15px;
+}

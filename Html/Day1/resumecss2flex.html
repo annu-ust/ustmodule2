@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        html,body{
+            height:100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header,article,aside,footer{
+            border: 1px solid rgb(8, 56, 95);
+        }
+        header{
+            height: 75px;
+        }
+        footer{
+            height: 100px;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            flex: auto;
+            background-color: rgb(211, 201, 211);
+            justify-content: center;
+            text-align: center;
+        }
+        article{
+            flex: auto;
+        }
+        aside{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1 style="text-align: center;">Annu Mathew</h1></header>
+    <main>
+        <aside>mkjjhix</aside>
+        <article>khiasgygsuyjy</article>
+        <aside>mbhjgyughihi</aside>
+
+    </main>
+    <footer><h4>catch me at</h4></footer>
+</body>
+</html>

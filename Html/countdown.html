@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script type = "text/JavaScript">
+            function countdown(n) {
+               if (n < 1) {
+                return [];
+                  }
+                 if (n === 1) {
+                 return [1];
+                 }
+             return [n].concat(countdown(n-1));
+            }
+            function counts()
+            {
+            var number=document.getElementById("number").value; 
+            var count = countdown(number);
+            document.write(count);
+            }
+    </script>   
+    </head>
+    <body>
+       
+<input type="text" id="number" name="number"/><br/>  
+<input type="button" value="submit" onclick="counts(number)"/>
+    </body>
+</html>

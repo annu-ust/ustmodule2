@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="from1css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+     crossorigin="anonymous">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <h3>rediff.com</h3>
+    </header>
+    <hr>
+    <main>
+        <h4> Create a rediffmail account</h4>
+        <div class="container">
+            <form name="registrationform" style="margin: 10px;padding: 10px;border: 2px solid salmon;" >
+                <table >
+                    <tr>
+                        <td>
+                            <label for="fullname">Full Name : </label>
+                        </td>
+                        <td><input type="text" name="fullname" length="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email1">email: </label></td>
+                        <td><input type="text"  class="registrationform-control" id="email1" length="250" placeholder="name@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email2">Alternate email id: </label></td>
+                        <td><input type="text" class="registrationform-control" name="email2" length="250" placeholder="name@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="checkbox1">Check if you don't have alternate email id: </label></td>
+                        <td><input class="registrationform-check-input"type="checkbox" name="checkbox1" value="" id="flexCheckDefault"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number: </label></td>
+                        <td><select name="countrycode"><option default value="ind">Ind +91</option>
+                            <option value="aus">Aus +61</option>
+                            <option value="us/canada">US/Canada +1</option>
+                            <option value="uk"> UK +44</option>
+                        </select>
+                        <input type="text" name="phone" length="10">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password1">Password: </label></td>
+                        <td><input type="password" name="password1" length="250" class="registrationform-control" aria-labelledby="passwordHelpBlock">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                              </div></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password2"> Confirm Password: </label></td>
+                        <td><input type="password" name="password2" length="250"class="registrationform-control" aria-labelledby="passwordHelpInline">
+                            
+                                <span id="passwordHelpInline" class="form-text">
+                                  Must be 8-20 characters long.
+                                </span>
+                              </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth: </label></td>
+                        <td><input type="date" name="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Sex: </label></td>
+                        <td><input type="radio" name="gender"value="male" >Male&nbsp&nbsp
+                            <input type="radio" name="gender" value="female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country: </label></td>
+                        <td><select name="country">
+                            <option value="ind">India</option>
+                            <option value="us">United States</option>
+                            <option value="cnd">Canada</option>
+                            <option value="uk">United Kinkdom</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cities">Select Cities: </label></td>
+                        <td><select name="cities">
+                            <option value="tri">Trivandrum</option>
+                            <option value="mb">Mumbai</option>
+                            <option value="ny">New York</option>
+                            <option value="cal">California</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><input class="btn btn-dark"type="submit" name="submit"value="Register" >
+                            <input class="btn btn-success"type="Reset" name="submit"value="Reset" >
+                        </td>
+                    </tr>
+                </table>
+            
+
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+div {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    border: 15px solid rgba(211, 240, 248, 0.687);
+    padding: 20px;
+    margin-left: 120px;
+  }
+ 
+
+    img{
+    padding: 10px;
+    float: left; 
+    border-radius: 10%;
+}
+
+    .p1{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+    }
+    li{
+        font-size: 20px;
+    }
